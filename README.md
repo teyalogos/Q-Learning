@@ -1,2 +1,2 @@
 # Q-Learning-1
-First Q-Learning Implementation I've ever made.
+First Q-Learning implementation I've ever done.
