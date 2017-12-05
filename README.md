@@ -1,11 +1,10 @@
 # Q-Learning-1
 First Q-Learning implementation I've ever done.
 
-# Usage
-```
-python main.py
-```
-# Output
+# The Game
+Here, the AI is represented as a 1 and the goal is represented as a 2.
+The goal of the game is to get to the goal as many times in 100 steps.
+Here, the AI has reached the goal 12 times in a 100 steps in epoch 12.
 ```
 0 0 0 0 0
 0 0 0 0 0
@@ -15,7 +14,3 @@ python main.py
 REWARD: 12
 OF EPOCH 24/50
 ```
-# The Game
-Here, the AI is represented as a 1 and the goal is represented as a 2.
-The goal of the game is to get to the goal as many times in 100 steps.
-Here, the AI has reached the goal 12 times in a 100 steps in epoch 12.
