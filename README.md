@@ -14,3 +14,6 @@ Here, the AI has reached the goal 12 times in a 100 steps in epoch 12.
 REWARD: 12
 OF EPOCH 24/50
 ```
+
+# What is Q-Learning?
+imma write this later brb
