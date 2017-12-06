@@ -1,6 +1,6 @@
 # Q-Learning-1
 First Q-Learning implementation I've ever done.
-I made this implementation easy to read and understand, hopefully you learn something from it.
+I made this implementation easy to read and understand. Hopefully you learn something from it.
 
 # The Game
 The AI is represented as a 1 and the goal is represented as a 2.
@@ -29,4 +29,4 @@ game = env.environment(board_size=20, goal_num=(20**2)/4, player_x=10, player_y=
 'Sets the environment size to a 10x20 square grid with one goal at the coordinates x:9 y:9'
 game = env.environment(board_size=10, goal_x=[9], goal_y=[9])
 ```
-The code is easy to read and understand, modifying the reward value, learning rate, discount and others are already documented inside the code.
+The code is easy to read and understand. Modifying the reward value, learning rate, discount and others are already documented inside the code.
