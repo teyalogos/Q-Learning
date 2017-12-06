@@ -19,7 +19,7 @@ class environment(object):
 
 
 
-    def __init__(self, board_size=10, goal_x=[9], goal_y=[9],
+    def __init__(self, board_size=5, goal_x=[4], goal_y=[4],
                  player_x=0, player_y=0, goal_num=1):
         'Initialize Object'
 

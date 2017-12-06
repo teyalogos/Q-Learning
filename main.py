@@ -6,8 +6,8 @@ import time
 
 
 #Initialize Environment
-game = env.environment() #Note: Not setting the goal coordinates randomizes them
-
+game = env.environment()
+#game = env.environment(board_size=20, goal_num=(20**2)/4, player_x=10, player_y=10) #Note: Not setting the goal coordinates randomizes them
 
 
 
