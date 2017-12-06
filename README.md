@@ -15,5 +15,14 @@ REWARD: 12
 OF EPOCH 24/50
 ```
 
-# What is Q-Learning?
-imma write this later brb
+# Options
+Changing the environment parameters
+```python
+'Sets the environment size to a 20x20 square grid and the number of goals to 100'
+game = env.environment(board_size=20, goal_num=(20**2)/4)
+'Sets the environment size to a 20x20 square grid and the number of goals to 100 and also sets the player at the coordinates'
+'x:10 y:10. The default value is 0'
+game = env.environment(board_size=20, goal_num=(20**2)/4, player_x=10, player_y=10)
+'Sets the environment size to a 10x20 square grid with one goal at the coordinates x:9 y:9'
+game = env.environment(board_size=10, goal_x=[9], goal_y=[9])
+```
