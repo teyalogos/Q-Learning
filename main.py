@@ -1,3 +1,5 @@
+#Add more goals
+
 import level as env
 import matplotlib.pyplot as plt
 import numpy as np
@@ -6,6 +8,10 @@ import time
 
 #Initialize Environment
 game = env.environment()
+game.board_size=10
+game.goal_x = game.board_size-1
+game.goal_y = game.board_size-1
+
 
 #Initialize Q-Table
 Q = np.zeros([game.board_size**2,4])
@@ -13,7 +19,7 @@ Q = np.zeros([game.board_size**2,4])
 #Learning Parameters
 lr = 0.9 #learning rate
 y = 0.9 #discount
-e = 0.01 #epsilon/randomness
+e = 0.05 #epsilon/randomness
 epochs = 50 #number of epochs
 
 rList = [] #list of rewards for plotting
@@ -23,7 +29,7 @@ for i in range(epochs):
     rAll = 0
 
     j = 0
-    while j < 99:
+    while j < 20*game.board_size:
         j+=1
         #Choose our action based on the Q-Table
         a = np.argmax(Q[s,:] + np.random.randn(1,4)*(1./(i+1)))
@@ -40,13 +46,13 @@ for i in range(epochs):
 
         print '\n' * 100
         game.draw()
-        time.sleep(0.01)
+        #time.sleep(0.02)
 
     rList.append(rAll)
 
     print "REWARD: %d" % (rAll)
     print "OF EPOCH %d/%d" % (i+1, epochs)
-    time.sleep(0.3)
+    time.sleep(0.5)
 
 
 print "Q-TABLE"
