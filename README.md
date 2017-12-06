@@ -1,10 +1,13 @@
 # Q-Learning-1
 First Q-Learning implementation I've ever done.
+I made this implementation easy to read and understand, hopefully you learn something from it.
 
 # The Game
 The AI is represented as a 1 and the goal is represented as a 2.
-The goal of the game is to get to the goal as many times in 100 steps.
+The goal of the game is to get to the goal as many times in n steps.
 Here, the AI has reached the goal 12 times in a 100 steps in epoch 24.
+I made the environment easy to customize for different learning scenarios,
+you can set the environment size, number of goals, etc easily.
 ```
 0 0 0 0 0
 0 0 0 0 0
