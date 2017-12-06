@@ -1,4 +1,4 @@
-# Q-Learning-1
+# Q-Learning
 First Q-Learning implementation I've ever done.
 I made this implementation easy to read and understand. Hopefully you learn something from it.
 
